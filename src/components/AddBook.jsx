@@ -10,8 +10,6 @@ const AddBook = () => {
   const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
 
-  console.log(author);
-
   const submitBookToStore = (e) => {
     e.preventDefault();
 
