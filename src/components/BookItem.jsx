@@ -6,6 +6,7 @@ const BookItem = ({ title, author, category }) => (
     <span>{category}</span>
     <h3>{title}</h3>
     <h5>{author}</h5>
+    <button type="button">Remove</button>
   </li>
 );
 
