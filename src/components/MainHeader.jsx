@@ -6,10 +6,10 @@ const MainHeader = () => (
     <nav>
       <ul>
         <li>
-          <Link to="/">Books</Link>
+          <Link to="/bookstore/books">Books</Link>
         </li>
         <li>
-          <Link to="/categories">Categories</Link>
+          <Link to="/bookstore/categories">Categories</Link>
         </li>
       </ul>
     </nav>
