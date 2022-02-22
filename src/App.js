@@ -8,7 +8,7 @@ function App() {
     <>
       <MainHeader />
 
-      <main>
+      <main className="container">
         <Routes>
           <Route path="/bookstore/books" element={<Books />} />
           <Route path="/bookstore/categories" element={<Categories />} />
