@@ -10,8 +10,8 @@ function App() {
 
       <main>
         <Routes>
-          <Route path="/" element={<Books />} />
-          <Route path="/categories" element={<Categories />} />
+          <Route path="/bookstore/books" element={<Books />} />
+          <Route path="/bookstore/categories" element={<Categories />} />
         </Routes>
       </main>
     </>
