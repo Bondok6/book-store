@@ -5,16 +5,16 @@ import MainHeader from './components/MainHeader';
 
 function App() {
   return (
-    <>
+    <div>
       <MainHeader />
 
       <main className="container">
         <Routes>
-          <Route path="/bookstore/books" element={<Books />} />
-          <Route path="/bookstore/categories" element={<Categories />} />
+          <Route path="/" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
         </Routes>
       </main>
-    </>
+    </div>
   );
 }
 
