@@ -25,6 +25,29 @@ export const getBooks = (payload) => ({
   payload,
 });
 
+export const getAllBooks = () => async (dispatch) => {
+  const bookList = await getBooksFromApi();
+  const books = [];
+  Object.keys(bookList).forEach((id) => {
+    books.push({
+      item_id: id,
+      title: bookList[id][0].title,
+      category: bookList[id][0].category,
+    });
+  });
+  dispatch(getBooks(books));
+};
+
+export const addNewBook = (newBook) => async (dispatch) => {
+  await addBookToApi(newBook);
+  dispatch(addBook(newBook));
+};
+
+export const deleteBook = (bookID) => async (dispatch) => {
+  await removeBookFromApi(bookID);
+  dispatch(removeBook(bookID));
+};
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
@@ -39,29 +62,6 @@ const reducer = (state = initialState, action) => {
     default:
       return state;
   }
-};
-
-export const addNewBook = (newBook) => async (dispatch) => {
-  await addBookToApi(newBook);
-  dispatch(addBook);
-};
-
-export const deleteBook = (bookID) => async (dispatch) => {
-  await removeBookFromApi(bookID);
-  dispatch(removeBook);
-};
-
-export const getAllBooks = () => async (dispatch) => {
-  const bookList = await getBooksFromApi();
-  const books = [];
-  Object.keys(bookList).forEach((id) => {
-    books.push({
-      item_id: id,
-      title: bookList[id][0].title,
-      category: bookList[id][0].category,
-    });
-  });
-  dispatch(getBooks(books));
 };
 
 export default reducer;

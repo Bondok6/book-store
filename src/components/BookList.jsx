@@ -8,8 +8,6 @@ const BookList = () => {
 
   const dispatch = useDispatch();
 
-  console.log(books);
-
   useEffect(() => {
     dispatch(getAllBooks());
   }, []);

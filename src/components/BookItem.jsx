@@ -14,7 +14,6 @@ const BookItem = (props) => {
   const dispatch = useDispatch();
 
   const removeHandler = () => {
-    console.log(id);
     dispatch(deleteBook(id));
   };
 
