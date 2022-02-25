@@ -1,0 +1,80 @@
+.form-section {
+  border-top: 1px solid #e8e8e8;
+  padding: 2rem;
+  margin-bottom: 10rem;
+}
+
+.form-title {
+  color: #888;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0 2rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input {
+  min-width: 50%;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #c4c4c4;
+  font-size: 1.5rem;
+}
+
+select {
+  min-width: 25%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0.8rem 1.1rem 0.75rem 1.3rem;
+  border: 1px solid #e8e8e8;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  background-image: url('../imgs//down-arrow.svg');
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 12px;
+  background-size: 2rem;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid var(--primary-clr);
+}
+
+.add-btn {
+  min-width: 15%;
+  background-color: var(--primary-clr);
+  color: var(--white-clr);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.add-btn:hover {
+  background-color: var(--secondary-clr);
+}
+
+@media screen and (max-width: 1250px) {
+  form {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  input {
+    width: 100%;
+  }
+}
