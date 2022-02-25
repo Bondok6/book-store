@@ -2,6 +2,8 @@
 
 In this project, I built a basic website that allows users to add/remove books from a book list using React and Redux.
 
+<img src="https://user-images.githubusercontent.com/45231276/155704982-ebbf9e33-90a2-42de-8825-4551659b1816.PNG" width="30%" /><img src="https://user-images.githubusercontent.com/45231276/155704966-78e68b37-ee41-413e-ad3a-bb2de8adc4c4.PNG" width="70%" />
+
 ## Built With
 
 - React.js
