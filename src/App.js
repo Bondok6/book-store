@@ -5,7 +5,7 @@ import MainHeader from './components/MainHeader';
 
 function App() {
   return (
-    <>
+    <div>
       <MainHeader />
 
       <main className="container">
@@ -16,7 +16,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </main>
-    </>
+    </div>
   );
 }
 
