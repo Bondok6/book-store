@@ -9,7 +9,7 @@ const MainHeader = () => (
 
         <div className="navbar-collapse">
           <ul className="navbar-nav m-3">
-            <li className="nav-item">
+            <li className="nav-item active">
               <Link to="/" className="nav-link">
                 Books
               </Link>
