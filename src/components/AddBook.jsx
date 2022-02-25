@@ -25,7 +25,7 @@ const AddBook = () => {
   };
 
   return (
-    <form>
+    <form onSubmit={submitBookToStore}>
       <input
         type="text"
         placeholder="Book Title"
@@ -44,9 +44,7 @@ const AddBook = () => {
         <option value="economy">Economy</option>
       </select>
 
-      <button type="submit" onClick={submitBookToStore}>
-        Add Book
-      </button>
+      <button type="submit">Add Book</button>
     </form>
   );
 };
