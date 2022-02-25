@@ -6,12 +6,12 @@ import MainHeader from './components/MainHeader';
 function App() {
   return (
     <>
-      <MainHeader key="header" />
+      <MainHeader />
 
       <main className="container">
         <Routes>
-          <Route path="/books" element={<Books key="books" />} />
-          <Route path="/categories" element={<Categories key="categories" />} />
+          <Route path="/books" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
         </Routes>
       </main>
     </>
