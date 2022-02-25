@@ -72,3 +72,9 @@ select:focus {
     gap: 1rem;
   }
 }
+
+@media screen and (max-width: 560px) {
+  input {
+    width: 100%;
+  }
+}

@@ -1,5 +1,4 @@
 li {
-  max-height: 17rem;
   display: flex;
   justify-content: space-between;
 }
@@ -113,5 +112,35 @@ li {
 @media screen and (max-width: 1400px) {
   .title {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .left-side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-side {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .book-progress {
+    border: none;
   }
 }
