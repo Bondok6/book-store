@@ -10,7 +10,7 @@ import App from './App';
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <App key="app" />
     </BrowserRouter>
   </Provider>,
   document.getElementById('root'),
