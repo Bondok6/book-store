@@ -10,7 +10,7 @@ const MainHeader = () => (
         <div className="navbar-collapse">
           <ul className="navbar-nav m-3">
             <li className="nav-item active">
-              <Link to="/" className="nav-link">
+              <Link to="/books" className="nav-link">
                 Books
               </Link>
             </li>
